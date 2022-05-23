@@ -32,7 +32,7 @@ const Data = () => {
   return (
     <>
       <div className="Data_body">
-        <h1>Data</h1>
+        <h1>Data fetching Using Custom Hook</h1>
         <hr />
         {data &&
           data.map((item) => {
