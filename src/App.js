@@ -9,6 +9,7 @@ import UseState from "./Hooks/useState/UseState.js";
 import Index from "./Hooks/useEffect/Index.js";
 import UseRef from "./Hooks/useRef/UseRef.js";
 import UseMemo from "./Hooks/UseMemo/UseMemo.js";
+import Data from "./Hooks/CustomHook/Data.js";
 
 function App() {
   const [theme, setTheme] = useState(false);
@@ -25,6 +26,7 @@ function App() {
         <UseRef />
         <UseMemo />
         <UseReducer />
+        <Data />
       </themeContext.Provider>
     </div>
   );

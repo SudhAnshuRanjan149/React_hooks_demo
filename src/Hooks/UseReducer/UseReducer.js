@@ -1,6 +1,6 @@
 import "./UseReducer.css";
 import { useState, useReducer } from "react";
-
+import UseReducer2 from "./UseReducer2/UseReducer2.js";
 //Initial State
 const initialState = 0;
 
@@ -46,6 +46,9 @@ const UseReducer = () => {
         <button onClick={() => dispatch({ type: "Decrement" })}>
           Decrement
         </button>
+
+        <hr />
+        <UseReducer2 />
       </div>
     </>
   );

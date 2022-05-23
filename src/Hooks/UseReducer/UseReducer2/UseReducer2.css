@@ -1,0 +1,12 @@
+.contact_details_body {
+  background-color: cadetblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 2rem;
+  padding: 2rem;
+  font-weight: 600;
+  margin: 1rem;
+}
