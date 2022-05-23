@@ -8,15 +8,19 @@ import "./child2.css";
 const Parent1 = () => {
   console.log("Parent1");
 
-  // const dispatch = useDispatch();
-  const theme = useContext(themeContext);
+  const { theme, setTheme } = useContext(themeContext);
 
   return (
     <>
       <div className="parent">
         <div className="parent_body">
           <span>Parent1:</span>
-          <button className={theme ? "light" : "dark"}>chnage theme</button>
+          <button
+            onClick={() => setTheme(!theme)}
+            className={theme ? "light" : "dark"}
+          >
+            change theme
+          </button>
         </div>
 
         <Child1 />

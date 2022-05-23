@@ -3,9 +3,8 @@ import themeContext from "./Hooks/useContext/Context/context.js";
 import { useState } from "react";
 import React from "react";
 
-import Parent1 from "./Hooks/useContext/Parent1.js";
-import Parent2 from "./Hooks/useContext/Parent2.js";
-
+import UseContext from "./Hooks/useContext/UseContext.js";
+import UseReducer from "./Hooks/UseReducer/UseReducer.js";
 import UseState from "./Hooks/useState/UseState.js";
 import Index from "./Hooks/useEffect/Index.js";
 import UseRef from "./Hooks/useRef/UseRef.js";
@@ -18,14 +17,14 @@ function App() {
   return (
     <div className="App">
       App page
-      <themeContext.Provider value={theme}>
+      <themeContext.Provider value={{ theme, setTheme }}>
         <button onClick={() => setTheme(!theme)}>change theme</button>
-        <Parent1 />
-        <Parent2 />
+        <UseContext />
         <UseState />
         <Index />
         <UseRef />
         <UseMemo />
+        <UseReducer />
       </themeContext.Provider>
     </div>
   );
